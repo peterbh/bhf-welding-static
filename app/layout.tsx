@@ -2,10 +2,11 @@ import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "../theme";
+import {NavBar} from "../components/NavBar/NavBar";
 
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
+  title: "BHF Welding LTD",
+  description: "Best Welding Team in Dublin. Family Owned Business",
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <NavBar/>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
