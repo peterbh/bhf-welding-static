@@ -9,7 +9,7 @@ const nextConfig = {
   output: "export",
   images: {
     loader: 'akamai',
-    path: '',
+    path: '/bhf-welding-static',
   },
   assetPrefix: '/bhf-welding-static',
   basePath: '/bhf-welding-static',
