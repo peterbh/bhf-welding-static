@@ -11,7 +11,7 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  assetPrefix: './',
+  assetPrefix: '/bhf-welding-static',
   basePath: '/bhf-welding-static',
 };
 
