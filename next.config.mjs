@@ -12,6 +12,7 @@ const nextConfig = {
     path: '',
   },
   assetPrefix: './',
+  basePath: '/bhf-welding-static',
 };
 
 export default withVanillaExtract(nextConfig);
