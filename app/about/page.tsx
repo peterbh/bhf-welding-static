@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Anchor,
   AspectRatio,
@@ -12,14 +14,13 @@ import {
   Text,
   Title
 } from "@mantine/core";
-import * as classes from "@/components/Welcome/Welcome.css";
 import React from "react";
 
 function About() {
   return (
     <Container >
       <Stack align="center" >
-        <Title className={classes.title} ta="center" mt={100} style={{ width: '100%' }}>
+        <Title ta="center" mt={100} style={{ width: '100%' }}>
           Contact Us
         </Title>
         <Group>
