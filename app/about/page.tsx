@@ -2,14 +2,9 @@
 
 import {
   Anchor,
-  AspectRatio,
-  Card,
   Container,
   Divider,
   Group,
-  Image,
-  List,
-  ListItem,
   Stack,
   Text,
   Title
