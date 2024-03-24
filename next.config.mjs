@@ -6,6 +6,12 @@ const withVanillaExtract = createVanillaExtractPlugin();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: "export",
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 };
 
 export default withVanillaExtract(nextConfig);
