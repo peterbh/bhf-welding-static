@@ -1,8 +1,9 @@
+'use client';
+
 import {
   Title,
   Text,
   Anchor,
-  Grid,
   Card,
   List,
   ListItem,
@@ -10,11 +11,14 @@ import {
   Image,
   CardSection,
   Stack,
-  Container
+  Container, em
 } from "@mantine/core";
 import * as classes from "./Welcome.css";
+import {useMediaQuery} from "@mantine/hooks";
 
 export function Welcome() {
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+  console.log(isMobile);
   return (
     <Container >
       <Stack bg="var(--mantine-color-body)" align="center" >
@@ -40,17 +44,17 @@ export function Welcome() {
             </Group>
           </Card>
           <Card radius="md" withBorder style={{ width: '100%' }}>
-            <Group justify="center">
-              <List>
-                <Text fw={500}>Our services include:</Text>
-                <ListItem>Alumium and Aluminium Castings</ListItem>
-                <ListItem>Alloy Wheel Repair</ListItem>
-                <ListItem>Stainless Steel</ListItem>
-                <ListItem>Cast Iron Repairs</ListItem>
-                <ListItem>Gate & Railing Restoration</ListItem>
-                <ListItem>Mobile Repairs</ListItem>
-                <ListItem>General Maintenance</ListItem>
-              </List>
+            <Group justify="center" grow={!isMobile}>
+                <List>
+                  <Text fw={500}>Our services include:</Text>
+                  <ListItem ps="xl">Alumium and Aluminium Castings</ListItem>
+                  <ListItem ps="xl">Alloy Wheel Repair</ListItem>
+                  <ListItem ps="xl">Stainless Steel</ListItem>
+                  <ListItem ps="xl">Cast Iron Repairs</ListItem>
+                  <ListItem ps="xl">Gate & Railing Restoration</ListItem>
+                  <ListItem ps="xl">Mobile Repairs</ListItem>
+                  <ListItem ps="xl">General Maintenance</ListItem>
+                </List>
               <Image src="/stain2.jpg" w="auto" fit="contain" h={200}/>
             </Group>
           </Card>

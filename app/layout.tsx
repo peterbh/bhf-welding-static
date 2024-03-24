@@ -1,8 +1,9 @@
 import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { theme } from "../theme";
-import {NavBar} from "../components/NavBar/NavBar";
+import { theme } from "@/theme";
+import {NavBar} from "@/components/NavBar/NavBar";
+import '@mantine/carousel/styles.css';
 
 export const metadata = {
   title: "BHF Welding LTD",

@@ -17,19 +17,30 @@ import {
   Title,
 } from '@mantine/core';
 import classes from './NavBar.module.css';
-import {ColorSchemeToggle} from "../ColorSchemeToggle/ColorSchemeToggle";
+import {ColorSchemeToggle} from "@/components/ColorSchemeToggle/ColorSchemeToggle";
 
 export function NavBar() {
 
   return (
-    <Box>
+    <Box pb='md'>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group>
-            <Title>BHF Welding</Title>
+            <Title>
+              <Anchor href="/">
+                <Text
+                  inherit
+                  variant="gradient"
+                  component="span"
+                  size="xl"
+                  gradient={{ from: "pink", to: "yellow" }}>
+                  BHF Welding
+                </Text>
+              </Anchor>
+            </Title>
           </Group>
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
+            <a href="/" className={classes.link}>
               Home
             </a>
             <a href="/about" className={classes.link}>

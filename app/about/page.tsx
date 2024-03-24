@@ -12,13 +12,13 @@ import {
   Text,
   Title
 } from "@mantine/core";
-import * as classes from "../../components/Welcome/Welcome.css";
+import * as classes from "@/components/Welcome/Welcome.css";
 import React from "react";
 
 function About() {
   return (
     <Container >
-      <Stack bg="var(--mantine-color-body)" align="center" >
+      <Stack align="center" >
         <Title className={classes.title} ta="center" mt={100} style={{ width: '100%' }}>
           Contact Us
         </Title>
@@ -26,20 +26,22 @@ function About() {
           <Text>Mobile:</Text>
           <Text>087 257 9585</Text>
         </Group>
-        <Divider size="xl" color="white"/>
+        <Divider size="sm" color="white" w={150}/>
         <Group>
           <Text>Landline:</Text>
           <Text>(01) 868 1100</Text>
-          <Divider size="xl" color="white"/>
         </Group>
+        <Divider size="sm" color="white" w={150}/>
         <Group>
           <Text>Email:</Text>
           <Text><Anchor href="mailto:billyhfox@gmail.com">billyhfox@gmail.com</Anchor></Text>
         </Group>
+        <Divider size="sm" color="white" w={150}/>
         <Group>
           <Text>Facebook:</Text>
           <Text><Anchor href="https://www.facebook.com/bhfwelding">BHF Welding Service Facebook</Anchor> </Text>
         </Group>
+        <Divider size="sm" color="white" w={150}/>
         <Group>
           <Text>Address:</Text>
           <Text><Anchor href="https://maps.app.goo.gl/phxaaZPgDQLPtKFA8">Unit 16, Chart House Business Centre, 157 Richmond Road, Dublin 3 </Anchor></Text>
