@@ -27,7 +27,7 @@ export function NavBar() {
         <Group justify="space-between" h="100%">
           <Group>
             <Title>
-              <Anchor href="/">
+              <Anchor href="/" >
                 <Text
                   inherit
                   variant="gradient"
@@ -40,15 +40,15 @@ export function NavBar() {
             </Title>
           </Group>
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="/" className={classes.link}>
+            <Anchor href="/" className={classes.link}>
               Home
-            </a>
-            <a href="/about" className={classes.link}>
+            </Anchor>
+            <Anchor href="/about" className={classes.link}>
               About Us
-            </a>
-            <a href="/gallery" className={classes.link}>
+            </Anchor>
+            <Anchor href="/gallery" className={classes.link}>
               Gallery of Work
-            </a>
+            </Anchor>
             <ColorSchemeToggle />
           </Group>
         </Group>
